@@ -1,0 +1,10 @@
+/node_modules
+/.idea
+/.awcache
+/.vscode
+npm-debug.log
+.DS_Store
+/test
+/coverage
+/.nyc_output
+/dist

@@ -1,0 +1,43 @@
+{
+  "name": "@crowdlinker/nestjs-mailer",
+  "version": "0.0.1",
+  "description": "Mailer module for NestJS",
+  "main": "index.js",
+  "author": "Crowdlinker Inc.",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "prepublish:npm": "npm run build",
+    "publish:npm": "npm publish --access public",
+    "prepublish:next": "npm run build",
+    "publish:next": "npm publish --access public --tag next",
+    "test:integration": "jest --config ./tests/jest-e2e.json --runInBand"
+  },
+  "dependencies": {
+    "nodemailer": "^6.3.0"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^6.7.2",
+    "@types/nodemailer": "^6.2.1",
+    "typescript": "^3.6.3"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^6.7.2"
+  },
+  "repository": {
+    "url": "https://github.com/CrowdLinker/nestjs-mailer",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/CrowdLinker/nestjs-mailer/issues"
+  },
+  "keywords": [
+    "nestjs",
+    "nodemailer",
+    "mailer",
+    "nodejs"
+  ],
+  "contributors": [
+    "Prateek Kathal <prateek.kathal@crowdlinker.com>"
+  ]
+}
