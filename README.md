@@ -22,7 +22,9 @@ npm install --save @crowdlinker/nestjs-mailer
 
 ## Usage
 
-### Synchronous
+### Importing the Module
+
+#### Synchronous
 
 ```js
 import { NodemailerModule } from '@crowdlinker/nestjs-mailer';
@@ -48,7 +50,7 @@ import { NodemailerOptions } from '@crowdlinker/nestjs-mailer';
 })
 ```
 
-### Asynchronous
+#### Asynchronous
 
 ```js
 import { NodemailerModule } from '@crowdlinker/nestjs-mailer';
@@ -78,6 +80,31 @@ import { NodemailerOptions } from '@crowdlinker/nestjs-mailer';
   ],
 })
 ```
+
+### Importing in a Class/Service
+
+```js
+import { Nodemailer } from '@crowdlinker/nestjs-mailer';
+
+class MailService {
+  constructor(
+    private readonly nodemailer: Nodemailer<NodemailerDrivers.SMTP>
+  ) {}
+
+  async mail(to, subject, text, html) {
+    this.nodemailer.sendMail({ to, subject, text, html });
+  }
+}
+```
+
+### Drivers
+
+You can use the following drivers
+
+1. `NodemailerDrivers.SES` - https://nodemailer.com/transports/ses/
+2. `NodemailerDrivers.JSON` - https://nodemailer.com/transports/stream/
+3. `NodemailerDrivers.SMTP` - https://nodemailer.com/smtp/
+4. `NodemailerDrivers.SENDMAIL` - https://nodemailer.com/transports/sendmail/
 
 ## Important Points To Note
 
