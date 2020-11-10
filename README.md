@@ -10,14 +10,16 @@ Mailer module for NestJS
 
 ## Packages
 
-- [Nodemailer](https://www.npmjs.com/package/nodemailer/v/6.3.0) - nodemailer (v6.3.0)
+- [Nodemailer](https://www.npmjs.com/package/nodemailer/v/6.4.15) - nodemailer (v6.4.15)
 
 ## Installation
 
 ```bash
-npm install --save @crowdlinker/nestjs-mailer
+npm install --save @crowdlinker/nestjs-mailer nodemailer
+npm install --save-dev @types/nodemailer
 // or
-// yarn add @crowdlinker/nestjs-mailer
+// yarn add @crowdlinker/nestjs-mailer nodemailer
+// yarn add -D @types/nodemailer
 ```
 
 ## Usage
