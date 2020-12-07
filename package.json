@@ -1,6 +1,6 @@
 {
   "name": "@crowdlinker/nestjs-mailer",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Mailer module for NestJS",
   "main": "index.js",
   "author": "Crowdlinker Inc.",
@@ -22,9 +22,6 @@
     "@types/nodemailer": "^6.4.0",
     "jest": "^26.6.3",
     "typescript": "^3.6.3"
-  },
-  "peerDependencies": {
-    "@nestjs/common": "^6.11.11"
   },
   "repository": {
     "url": "https://github.com/CrowdLinker/nestjs-mailer",
