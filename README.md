@@ -10,7 +10,7 @@ Mailer module for NestJS
 
 ## Packages
 
-- [Nodemailer](https://www.npmjs.com/package/nodemailer/v/6.4.15) - nodemailer (v6.4.15)
+- [Nodemailer](https://www.npmjs.com/package/nodemailer/v/6.6.2) - nodemailer (v6.6.2)
 
 ## Installation
 
@@ -110,7 +110,7 @@ You can use the following drivers
 
 ## Important Points To Note
 
-- Code is written in Typescript (v3.6.3)
+- Code is written in Typescript (v3.9.10)
 
 ## Contributors
 
