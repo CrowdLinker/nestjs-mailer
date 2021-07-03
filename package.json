@@ -1,6 +1,6 @@
 {
   "name": "@crowdlinker/nestjs-mailer",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Mailer module for NestJS",
   "main": "index.js",
   "author": "Crowdlinker Inc.",
