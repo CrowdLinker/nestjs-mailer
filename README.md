@@ -22,6 +22,8 @@ npm install --save-dev @types/nodemailer
 // yarn add -D @types/nodemailer
 ```
 
+> Note: For NestJS < v7, please download version 0.5.0 for this package.
+
 ## Usage
 
 ### Importing the Module
